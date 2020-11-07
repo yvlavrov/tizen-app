@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 0.8fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas:
+            "undefined undefined undefined undefined undefined"
+            "lock pulse pulse pulse pulse"
+            "line line line line line"
+            "time time time time time";
+}
+
+.pulse { grid-area: pulse; }
+
+.lock { grid-area: lock; }
+
+.line { grid-area: line; }
+
+.time { grid-area: time; }
+
+.undefined { grid-area: undefined; }
